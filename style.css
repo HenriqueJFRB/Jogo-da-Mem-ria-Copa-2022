@@ -1,0 +1,65 @@
+body,html {
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 100%;
+    margin: 0;
+}
+
+#container {
+    height: 100%;
+    background-image: url("campo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+h1,h2,h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#cardBox {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.card {
+    height: 150px;
+    width: 110px;
+    cursor: pointer;
+}
+
+.cardBack {
+    height: 100%;
+    width: 100%;
+    background-color: #e1e0e0;
+    border: solid 1px #c1bfbf;
+    border-radius: 5px;
+}
+
+.cardFront {
+    height: 100%;
+    width: 100%;
+    border: solid 1px #c1bfbf;
+    border-radius: 5px;
+}
+
+.show {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+.match {
+opacity: 0.5;
+outline:5px solid-green;
+outline-offset: -5px;
+}
